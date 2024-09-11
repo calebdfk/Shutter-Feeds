@@ -2,12 +2,12 @@
 
 ## Overview
 
-**Shutter Feeds** is a web application built for photography enthusiasts. Users can browse, upload photos, read and submit reviews, and interact with a community of photographers and photography lovers. The project uses React for the frontend and integrates Redux for state management, with asynchronous actions handled by Redux Thunk.
+**Shutter Feeds** is a web application built for photography enthusiasts. Users can browse, upload photos, read and submit reviews in the comment section, and interact with a community of photographers and photography lovers. The project uses React for the frontend and integrates Redux for state management, with asynchronous actions handled by Redux Thunk.
 
 ## Features
 
 - **Browse & Upload Photos**: Users can explore and upload their own photography.
-- **Review System**: Read and submit reviews for photography collections.
+- **Comment System**: Read and submit Comments for photography collections.
 - **User Authentication**: Login and manage accounts.
 - **Community Engagement**: Participate in reviews, ratings, and comments.
 
@@ -26,7 +26,7 @@ To get this project running locally, follow the steps below.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/Shutter-Feeds.git
+   git clone https://github.com/calebdfk/Shutter-Feeds.git
    ```
 
 2. **Navigate to the project directory:**
@@ -40,7 +40,7 @@ To get this project running locally, follow the steps below.
    ```
 
 4. **Set up environment variables:**
-   If necessary, create an `.env` file for storing API keys or other sensitive data.
+   If necessary, we will create an `.env` file for storing API keys or other sensitive data.
 
 5. **Start the development server:**
    ```bash
@@ -78,9 +78,9 @@ npm test
 ### Contributing
 
 1. Fork the repository.
-2. Create a new feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m 'Add your feature'`).
-4. Push to the branch (`git push origin feature/your-feature`).
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push to the branch.
 5. Open a pull request for review.
 
 ---
@@ -98,7 +98,7 @@ npm test
 
 - **App Component**: The root component.
 - **PhotoGallery Component**: Displays photos.
-- **Reviews Component**: Manages reviews.
+- **Comments Component**: Manages comments.
 - **Auth Component**: Handles user login.
 
 ### Folder Structure
@@ -143,16 +143,6 @@ Managed using Trello/Kanban for task tracking:
 
 ---
 
-## Mockups (if applicable)
-
-Include visual designs or mockups here if available.
-
----
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-You can copy and paste this content into your `README.md` file for the Shutter Feeds project.
