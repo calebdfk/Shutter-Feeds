@@ -34,9 +34,10 @@
     margin: 0 15px;
     text-decoration: none;
     color: black;
+    
   }
   
-  .auth-buttons button {
+  /* .auth-buttons button {
     margin-left: 10px;
     padding: 10px 20px;
     border: 2px solid black;
@@ -45,10 +46,11 @@
     border-radius: 25px;
     font-size: 16px;
     cursor: pointer;
-  }
+  } */
   
   .auth-buttons .signup-btn {
     margin-right: 15px;
+  
   }
   
   .main-section {

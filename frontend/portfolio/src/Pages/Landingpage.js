@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './LandingPage.css'; 
 import Logo from '../Assets/Logo.jpg';
 
@@ -17,7 +18,7 @@ const LandingPage = () => {
           <a href="#gallery">Gallery</a>
         </nav>
         <div className="auth-buttons">
-          <button className="signup-btn">Sign Up</button>
+          <button className="signup-btn"><Link to="/sign-up">Sign Up</Link></button>
           <button className="profile-btn">Profile</button>
         </div>
       </header>
@@ -28,8 +29,16 @@ const LandingPage = () => {
         <p className="subtitle">
           Unleash your inner photographer and join our vibrant community!
         </p>
-        <button className="get-started-btn">Get Started</button>
+        <button className="get-started-btn"><Link to="/sign-up">Get Started</Link></button>
       </main>
+
+      <section className="call-to-action">
+        <div className="cta-content">
+          <h1>Capture, Share, Inspire, Repeat!</h1>
+          <button className="cta-button">Explore Now</button>
+        </div>
+      </section>
+
 
       {/* Floating Action Button */}
       <div className="floating-action-btn">
