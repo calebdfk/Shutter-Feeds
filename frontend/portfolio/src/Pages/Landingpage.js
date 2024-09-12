@@ -9,7 +9,7 @@ const LandingPage = () => {
       <header className="header">
         <div className="logo-container">
           <img src= {Logo} alt="Shutter Logo" className="logo" />
-          <span className="app-name">Shutter</span>
+          <span className="app-name">Shutter Feeds</span>
         </div>
         <nav className="nav-links">
           <a href="#home">Home</a>
