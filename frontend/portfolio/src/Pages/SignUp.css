@@ -1,52 +1,156 @@
+.signup-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left side: Form container */
 .signup-form {
-    /* Set background image and styling */
-    background-image: url('../Assets/Logo.jpg'); /* Replace with your image path */
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background-color: #f4f4f4; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.signup-form h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.signup-form p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.google-login {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #ccc;
+  line-height: 0;
+}
+
+.divider span {
+  background: #f4f4f4;
+  padding: 0 10px;
+  position: relative;
+  top: -10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.input-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; 
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.SignUp-btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #3d8bb3;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 16px; 
+}
+
+.SignUp-btn:hover {
+  background-color: #3d8bb3; 
+}
+
+Login link styling
+a.login-link {
+  color: #007bff; 
+  text-decoration: none;
+}
+
+a.login-link:hover {
+  text-decoration: underline; 
+}
+
+/* Get Started link styling */
+a.get-started-link {
+  color: #ffffff; 
+  text-decoration: none;
+}
+
+a.get-started-link:hover {
+  text-decoration: underline; 
+}
+
+/* Right side: Background image */
+.signup-image {
+  flex: 1;
+  background-image: url('../Assets/Logo.jpg'); 
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+.signup-image .image-content {
+  max-width: 400px;
+}
+
+.signup-image h3 {
+  font-size: 2em; 
+  margin-bottom: 10px;
+}
+
+.signup-image p {
+  font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-form, .signup-image {
+    flex: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .signup-image {
     padding: 20px;
   }
-  
-  h1, h2 {
-    margin: 0;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .input-group {
-    margin-bottom: 10px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  .SignUp-btn {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  a {
-    color: white;
-    text-decoration: none;
-  }
+}

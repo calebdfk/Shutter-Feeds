@@ -29,7 +29,7 @@ const LandingPage = () => {
         <p className="subtitle">
           Unleash your inner photographer and join our vibrant community!
         </p>
-        <button className="get-started-btn"><Link to="/sign-up">Get Started</Link></button>
+        <Link to="/sign-up"><button className="get-started-btn">Get Started</button></Link>
       </main>
 
       <section className="call-to-action">

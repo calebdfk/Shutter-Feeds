@@ -11,7 +11,7 @@ function Header() {
           <span className="app-name">Shutter Feeds</span>
         </div>
         <nav className="nav-links">
-          <a href="#home">Home</a>
+          <a href="/">Home</a>
           <a href="#posts">Posts</a>
           <a href="#gallery">Gallery</a>
         </nav>
