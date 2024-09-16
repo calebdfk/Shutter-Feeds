@@ -44,6 +44,67 @@ const LandingPage = () => {
       <div className="floating-action-btn">
         <button className="add-btn">+</button>
       </div>
+
+      <section className="features">
+  <h2>Why Shutter Feeds?</h2>
+  <div className="feature-list">
+    <div className="feature-item">
+      <h3>Share Your Moments</h3>
+      <p>Upload and share your favorite photos with a passionate community.</p>
+    </div>
+    <div className="feature-item">
+      <h3>Discover Inspiration</h3>
+      <p>Explore curated galleries and find inspiration for your next shot.</p>
+    </div>
+    <div className="feature-item">
+      <h3>Get Feedback</h3>
+      <p>Receive constructive feedback and tips from fellow photographers.</p>
+    </div>
+  </div>
+</section>
+
+<section className="testimonials">
+  <h2>What Our Users Say</h2>
+  <div className="testimonial-list">
+    <div className="testimonial-item">
+      <p>"Shutter Feeds has rekindled my love for photography!"</p>
+      <span>- Caleb Kend</span>
+    </div>
+    <div className="testimonial-item">
+      <p>"A fantastic platform for photographers of all levels."</p>
+      <span>- Rhys Larsen</span>
+    </div>
+  </div>
+</section>
+
+<section className="faq">
+  <h2>FAQs</h2>
+  <div className="faq-item">
+    <h3>How do I upload my photos?</h3>
+    <p>You can upload photos by signing up and navigating to the 'posts' section in your profile.</p>
+  </div>
+  </section>
+
+  <section className="newsletter">
+  <h2>Stay Updated</h2>
+  <p>Subscribe to our newsletter to get the latest updates.</p>
+  <form className="newsletter-form">
+    <input type="email" placeholder="Enter your email" />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+  <footer className="footer">
+  <div className="footer-content">
+    <p>&copy; 2024 Shutter Feeds. All rights reserved.</p>
+    <div className="social-links">
+      <a href="#facebook">Facebook</a>
+      <a href="#instagram">Instagram</a>
+      <a href="#twitter">Twitter</a>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };

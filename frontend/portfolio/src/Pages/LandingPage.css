@@ -106,7 +106,7 @@
   
 
   .call-to-action {
-    background-color: #3d8bb3; /* Similar blue color to the one in the image */
+    background-color: #3d8bb3; 
     padding: 50px 20px;
     border: none;
     text-align: center;
@@ -135,6 +135,151 @@
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  .features {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .feature-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+  }
+  
+  .feature-item p {
+    color: #6c757d;
+  }
+  
+  .testimonials {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #3d8bb3;
+    color: #6c757d
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .testimonial-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .testimonial-item {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .testimonial-item span {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  .footer {
+    padding: 20px;
+    background-color: #ffffff;
+    color: #033852;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: #033852;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-form {
+    margin-top: 20px;
+  }
+  
+  .newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+  }
+  
+  .newsletter-form button {
+    padding: 10px 20px;
+    background-color: #3d8bb3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .faq {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    text-align: ceter;
+  }
+  
+  .faq h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2px;
+  }
+  
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  .faq-item h3 {
+    font-size: 1.5rem;
+    color: #1e3c72;
+  }
+  
+  .faq-item p {
+    color: #6c757d;
+    font-style: italic;
   }
   
 
