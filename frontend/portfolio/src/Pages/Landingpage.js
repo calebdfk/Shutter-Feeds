@@ -18,7 +18,7 @@ const LandingPage = () => {
           <a href="#gallery">Gallery</a>
         </nav>
         <div className="auth-buttons">
-          <button className="signup-btn"><Link to="/sign-up">Sign Up</Link></button>
+        <Link to="/sign-up"><button className="signup-btn">Sign Up</button></Link>
           <button className="profile-btn">Profile</button>
         </div>
       </header>
