@@ -1,0 +1,184 @@
+/* General Page Styling */
+.posts-page {
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative; /* Ensure the floating action button is correctly positioned relative to this container */
+  }
+  
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .post {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  .post-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .post-owner {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .post-caption {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fafafa;
+    border-top: 1px solid #dbdbdb;
+  }
+  
+  .post-actions button {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: transparent; 
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  button:active {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .like-button {
+    color: #ed4956;
+  }
+  
+  .comment-button {
+    color: #262626;
+  }
+  
+  /* Modal Container */
+  .upload-modal {
+    position: fixed; /* Fix to the viewport */
+    top: 0;
+    right: 0; /* Align to the right side */
+    width: 40%; /* Adjust width as needed */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align content to the right */
+    z-index: 1000; /* Ensure the modal is on top of other elements */
+    overflow-y: auto; /* Allow scrolling if needed */
+  }
+  
+  /* Modal Content */
+  .upload-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%; /* Full width of the modal container */
+    max-width: 400px; /* Adjust width as needed */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1001; /* Ensure the modal content is above the button */
+  }
+  
+  /* Modal Buttons */
+  .upload-btn, .close-btn {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .upload-btn:hover, .close-btn:hover {
+    background-color: #007bff;
+  }
+  
+  .close-btn {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  .close-btn:hover {
+    background-color: #cccccc;
+  }
+  
+  /* Textarea Styling */
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  /* Floating Action Button */
+  .floating-action-btn {
+    position: fixed; /* Fix to the viewport */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    z-index: 1000; /* Ensure it's above other content */
+  }
+  
+  .add-btn {
+    background-color: #3897f0; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+  }
+  
+  .add-btn:hover {
+    background-color: #007bff; /* Change color on hover */
+  }
+  

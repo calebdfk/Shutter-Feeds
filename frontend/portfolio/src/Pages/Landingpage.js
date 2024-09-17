@@ -14,7 +14,7 @@ const LandingPage = () => {
         </div>
         <nav className="nav-links">
           <a href="#home">Home</a>
-          <a href="#posts">Posts</a>
+          <a href="/posts">Posts</a>
           <a href="#gallery">Gallery</a>
         </nav>
         <div className="auth-buttons">
@@ -41,9 +41,9 @@ const LandingPage = () => {
 
 
       {/* Floating Action Button */}
-      <div className="floating-action-btn">
+      {/* <div className="floating-action-btn">
         <button className="add-btn">+</button>
-      </div>
+      </div> */}
 
       <section className="features">
   <h2>Why Shutter Feeds?</h2>

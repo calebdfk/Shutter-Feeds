@@ -87,7 +87,7 @@
     cursor: pointer;
   }
   
-  .floating-action-btn {
+  /* .floating-action-btn {
     position: fixed;
     bottom: 30px;
     right: 30px;
@@ -102,7 +102,7 @@
     height: 60px;
     font-size: 30px;
     cursor: pointer;
-  }
+  } */
   
 
   .call-to-action {

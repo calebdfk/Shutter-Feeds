@@ -5,6 +5,7 @@ import SignUp from './Pages/SignUp';
 import LandingPage from './Pages/Landingpage';
 import Header from './components/Header';
 import Login from './Pages/Login';
+import PostsPage from './Pages/Posts';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         {/* Define routes for different pages */}
         <Routes>
           <Route path="/" element={<LandingPage />} />
+          <Route path="/posts" element={<PostsPage/>} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
           {/* Other routes */}
