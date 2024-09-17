@@ -1,15 +1,24 @@
 import React, { useState, useEffect } from 'react';
-import { FaHeart, FaComment } from 'react-icons/fa';
+import { FaHeart, FaComment, FaTrash } from 'react-icons/fa';
 import './Posts.css';
 
-const UploadModal = ({ isOpen, onClose }) => {
+// UploadModal Component
+const UploadModal = ({ isOpen, onClose, onAddPost }) => {
   const [image, setImage] = useState(null);
   const [caption, setCaption] = useState("");
 
   const handleUpload = () => {
-    // Handle the upload process (mocked for now)
-    console.log("Uploading:", image, caption);
-    onClose();
+    if (image && caption) {
+      // Mocking the upload process and passing the new post to the parent component
+      const newPost = {
+        id: Date.now(), // Unique ID for the new post
+        url: URL.createObjectURL(image), // Create a URL for the uploaded image
+        owner: { name: 'New User' }, // Mocking a user for the new post
+        caption: caption
+      };
+      onAddPost(newPost); // Add the new post
+      onClose(); // Close the modal
+    }
   };
 
   if (!isOpen) return null;
@@ -31,6 +40,7 @@ const UploadModal = ({ isOpen, onClose }) => {
   );
 };
 
+// PostsPage Component
 const PostsPage = () => {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -59,13 +69,21 @@ const PostsPage = () => {
     fetchData();
   }, []);
 
+  const handleAddPost = (newPost) => {
+    setPosts([newPost, ...posts]); // Add the new post to the beginning of the posts array
+  };
+
+  const handleDeletePost = (postId) => {
+    setPosts(posts.filter(post => post.id !== postId)); // Remove the post with the given ID
+  };
+
   if (loading) {
     return <div>Loading...</div>;
   }
 
   return (
     <div className="posts-page">
-      <h1>Recent Posts</h1>
+      <h1>View Recent Posts</h1>
       <div className="posts-container">
         {posts.map(post => (
           <div key={post.id} className="post">
@@ -82,6 +100,9 @@ const PostsPage = () => {
               <button className="comment-button">
                 <FaComment /> Comment
               </button>
+              <button className="delete-button" onClick={() => handleDeletePost(post.id)}>
+                <FaTrash /> Delete
+              </button>
             </div>
           </div>
         ))}
@@ -91,7 +112,11 @@ const PostsPage = () => {
         <button onClick={() => setIsUploadOpen(true)} className="add-btn">+</button>
       </div>
 
-      <UploadModal isOpen={isUploadOpen} onClose={() => setIsUploadOpen(false)} />
+      <UploadModal
+        isOpen={isUploadOpen}
+        onClose={() => setIsUploadOpen(false)}
+        onAddPost={handleAddPost}
+      />
     </div>
   );
 };

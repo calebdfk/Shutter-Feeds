@@ -181,4 +181,18 @@
   .add-btn:hover {
     background-color: #007bff; /* Change color on hover */
   }
+
+  .delete-button {
+    color: #e57373; /* Red color for delete */
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    color: #c62828; /* Darker red on hover */
+  }
+  
   
