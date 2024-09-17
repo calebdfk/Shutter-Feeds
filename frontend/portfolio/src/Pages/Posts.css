@@ -24,6 +24,7 @@
     width: 80%;
     max-width: 600px;
     margin-bottom: 20px;
+    position: relative; /* For absolute positioning of the action menu */
   }
   
   .post-header {
@@ -91,20 +92,73 @@
   .comment-button {
     color: #262626;
   }
+
+  /* Menu Button */
+.menu-btn {
+    position: absolute; 
+    right: 10px; 
+    transform: translateY(-90%); 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #262626;
+  }
+  
+ .action-menu {
+    position: absolute; 
+    top: 10px; 
+    right: 10px; 
+    display: flex;
+    flex-direction: column;
+    background: #fff; 
+    border: 1px solid #dbdbdb; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px;
+  } 
+  
+  .action-menu button {
+    background: none;
+    border: none;
+    color: #262626;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 5px;
+    transition: color 0.3s ease;
+    padding: 5px 10px; 
+  }
+  
+  .action-menu button:hover {
+    color: #3897f0; 
+  }
+  
+  /* Delete button styling */
+  .delete-button {
+    color: #e57373; 
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-button:hover {
+    color: #c62828; /* Darker red on hover */
+  }
   
   /* Modal Container */
   .upload-modal {
-    position: fixed; /* Fix to the viewport */
+    position: fixed; 
     top: 0;
-    right: 0; /* Align to the right side */
-    width: 40%; /* Adjust width as needed */
-    height: 100%; /* Full height */
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    right: 0; 
+    width: 40%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.5); 
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Align content to the right */
-    z-index: 1000; /* Ensure the modal is on top of other elements */
-    overflow-y: auto; /* Allow scrolling if needed */
+    justify-content: flex-end; 
+    z-index: 1000; 
+    overflow-y: auto; 
   }
   
   /* Modal Content */
@@ -156,14 +210,14 @@
   
   /* Floating Action Button */
   .floating-action-btn {
-    position: fixed; /* Fix to the viewport */
-    bottom: 20px; /* Distance from bottom */
-    right: 20px; /* Distance from right */
-    z-index: 1000; /* Ensure it's above other content */
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
   }
   
   .add-btn {
-    background-color: #3897f0; /* Button color */
+    background-color: #3d8bb3; 
     color: white;
     border: none;
     border-radius: 50%;
@@ -181,18 +235,46 @@
   .add-btn:hover {
     background-color: #007bff; /* Change color on hover */
   }
-
-  .delete-button {
-    color: #e57373; /* Red color for delete */
+  
+  /* Comment Input */
+  .comment-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .comment-input textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .comment-input button {
+    align-self: flex-end;
+    background-color: #3897f0;
+    color: white;
     border: none;
-    background: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
     cursor: pointer;
-    font-size: 14px;
-    transition: color 0.3s ease;
   }
   
-  .delete-button:hover {
-    color: #c62828; /* Darker red on hover */
+  /* Comments List */
+  .comments-list {
+    padding: 10px;
+    border-top: 1px solid #dbdbdb;
   }
   
+  .comment {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+  
+  .delete-comment-btn {
+    background: none;
+    border: none;
+    color: #ed4956;
+    cursor: pointer;
+  }
   
