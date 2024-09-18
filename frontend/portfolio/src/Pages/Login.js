@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import './Login.css'; 
+import { Link, useNavigate } from 'react-router-dom';
+import './Login.css';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-     };
+    // Here you should handle authentication logic
+    // For demonstration purposes, let's assume authentication is successful:
+    navigate('/'); // Redirect to homepage
+  };
 
   return (
     <div className="Login-container">
@@ -16,8 +20,7 @@ const LoginForm = () => {
       <div className="Login-form">
         <h2>Hi there!</h2>
         <p>Welcome to Shutter Feeds</p>
-                <div className="divider">
-                </div>
+        <div className="divider"></div>
         <form onSubmit={handleSubmit}>
           <div className="input-group">
             <label htmlFor="email">Email</label>
