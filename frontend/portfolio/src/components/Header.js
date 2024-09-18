@@ -13,7 +13,7 @@ function Header() {
         <nav className="nav-links">
           <a href="/">Home</a>
           <a href="/posts">Posts</a>
-          <a href="#gallery">Gallery</a>
+          <a href="/notifications">Notifications</a>
         </nav>
         <div className="auth-buttons">
         <Link to="/sign-up"><button className="signup-btn">Sign Up</button></Link>
