@@ -12,12 +12,12 @@ function Header() {
         </div>
         <nav className="nav-links">
           <a href="/">Home</a>
-          <a href="#posts">Posts</a>
+          <a href="/posts">Posts</a>
           <a href="#gallery">Gallery</a>
         </nav>
         <div className="auth-buttons">
         <Link to="/sign-up"><button className="signup-btn">Sign Up</button></Link>
-          <button className="profile-btn">Profile</button>
+        <Link to="/profile"><button className="profile-btn">Profile</button></Link>
         </div>
       </header>
   );

@@ -7,7 +7,7 @@ const LandingPage = () => {
   return (
     <div className="landing-page">
       {/* Header Section */}
-      <header className="header">
+      {/* <header className="header">
         <div className="logo-container">
           <img src= {Logo} alt="Shutter Logo" className="logo" />
           <span className="app-name">Shutter Feeds</span>
@@ -19,23 +19,24 @@ const LandingPage = () => {
         </nav>
         <div className="auth-buttons">
         <Link to="/sign-up"><button className="signup-btn">Sign Up</button></Link>
-          <button className="profile-btn">Profile</button>
+        <Link to="/profile"><button className="profile-btn">Profile</button></Link>
         </div>
-      </header>
+      </header> */}
 
       {/* Main Section */}
       <main className="main-section">
         <h1 className="main-title">Snap Happy</h1>
         <p className="subtitle">
-          Unleash your inner photographer and join our vibrant community!
+          Unleash your inner photographer with shutter feeds 
         </p>
+        <p className="subtitle">Join our vibrant community today!</p>
         <Link to="/sign-up"><button className="get-started-btn">Get Started</button></Link>
       </main>
 
       <section className="call-to-action">
         <div className="cta-content">
           <h1>Capture, Share, Inspire, Repeat!</h1>
-          <button className="cta-button">Explore Now</button>
+          <Link to="/posts"><button className="cta-button">Explore Now</button></Link>
         </div>
       </section>
 
