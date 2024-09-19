@@ -8,6 +8,8 @@ import Login from './Pages/Login';
 import PostsPage from './Pages/Posts';
 import ProfilePage from './Pages/ProfilePage';
 import NotificationsPage from './Pages/NotificationsPage';
+import Layout from './components/Layout';
+
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
           <Route path="/Login" element={<Login />} />
           {/* Other routes */}
         </Routes>
+        <Layout />
       </Router>
     </div>
   );
