@@ -9,7 +9,7 @@
 - **Browse & Upload Photos**: Users can explore and upload their own photography.
 - **Comment System**: Read and submit Comments for photography collections.
 - **User Authentication**: Login and manage accounts.
-- **Community Engagement**: Participate in reviews, ratings, and comments.
+- **Community Engagement**: Participate in reviews, likes, and comments.
 
 ---
 
