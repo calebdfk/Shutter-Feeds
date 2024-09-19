@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './ProfilePage.css';
-import { FaHeart, FaComment, FaTrash } from 'react-icons/fa';
+import { FaHeart, FaComment, } from 'react-icons/fa';
 import './Posts.css'; // Reusing styles for post details
 
 const Profile = () => {
