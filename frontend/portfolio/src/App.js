@@ -15,10 +15,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* Header is placed outside the Routes so it appears on all pages */}
-        <Header />
+                <Header />
 
-        {/* Define routes for different pages */}
+        
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/posts" element={<PostsPage/>} />
@@ -26,7 +25,7 @@ function App() {
           <Route path="/profile" element={<ProfilePage/>} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/Login" element={<Login />} />
-          {/* Other routes */}
+         
         </Routes>
         <Layout />
       </Router>

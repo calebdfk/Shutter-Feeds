@@ -21,11 +21,8 @@ const SignUpForm = () => {
 
     setError('');
 
-    // Submit form data
-    console.log('Form submitted:', { email, password });
-    // Here you would handle form submission, e.g., API call
-
-    // Redirect to home page
+        console.log('Form submitted:', { email, password });
+    
     navigate('/');
   };
 

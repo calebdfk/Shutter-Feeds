@@ -97,7 +97,7 @@
   }
   
   a.login-link:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline; 
   }
   
   /* Get Started link styling */

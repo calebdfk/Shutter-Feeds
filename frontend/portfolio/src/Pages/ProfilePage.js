@@ -130,8 +130,7 @@ const Profile = () => {
               <button className="like-button"><FaHeart /> Like</button>
               <button className="comment-button"><FaComment /> Comment</button>
             </div>
-            {/* Add more post details like comments, delete button here if needed */}
-          </div>
+                      </div>
         </div>
       )}
     </div>

@@ -46,7 +46,7 @@ const PostsPage = () => {
   const [isUploadOpen, setIsUploadOpen] = useState(false);
   const [selectedPostId, setSelectedPostId] = useState(null);
   const [actionMenuOpen, setActionMenuOpen] = useState(false);
-  const currentUser = 'currentUser'; // Simulate current user
+  const currentUser = 'currentUser';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -62,7 +62,7 @@ const PostsPage = () => {
         caption: `This is a description for the photo by ${users[index % users.length].name}`,
         comments: [],
         likedBy: [],
-        likeCount: 0 // Initialize like count
+        likeCount: 0 
       }));
 
       setPosts(postsWithOwners);
@@ -89,11 +89,11 @@ const PostsPage = () => {
           return {
             ...post,
             likedBy: hasLiked
-              ? post.likedBy.filter(user => user !== currentUser) // Remove the like if already liked
-              : [...post.likedBy, currentUser], // Add the like if not liked yet
+              ? post.likedBy.filter(user => user !== currentUser) 
+              : [...post.likedBy, currentUser], 
             likeCount: hasLiked
-              ? post.likeCount - 1 // Decrement the count if already liked
-              : post.likeCount + 1 // Increment the count if not liked yet
+              ? post.likeCount - 1 
+              : post.likeCount + 1 
           };
         }
         return post;

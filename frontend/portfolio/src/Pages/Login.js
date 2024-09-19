@@ -9,9 +9,7 @@ const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Here you should handle authentication logic
-    // For demonstration purposes, let's assume authentication is successful:
-    navigate('/'); // Redirect to homepage
+       navigate('/'); // Redirect to homepage
   };
 
   return (

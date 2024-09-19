@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative; /* Ensure the floating action button is correctly positioned relative to this container */
+    position: relative; 
   }
   
   .posts-container {
@@ -24,7 +24,7 @@
     width: 80%;
     max-width: 600px;
     margin-bottom: 20px;
-    position: relative; /* For absolute positioning of the action menu */
+    position: relative; 
   }
   
   .post-header {
@@ -143,7 +143,7 @@
   }
   
   .delete-button:hover {
-    color: #c62828; /* Darker red on hover */
+    color: #c62828; 
   }
   
   /* Modal Container */
@@ -166,11 +166,11 @@
     background: white;
     padding: 20px;
     border-radius: 8px;
-    width: 100%; /* Full width of the modal container */
-    max-width: 400px; /* Adjust width as needed */
+    width: 100%; 
+    max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     position: relative;
-    z-index: 1001; /* Ensure the modal content is above the button */
+    z-index: 1001; 
   }
   
   /* Modal Buttons */
@@ -233,7 +233,7 @@
   }
   
   .add-btn:hover {
-    background-color: #007bff; /* Change color on hover */
+    background-color: #007bff;
   }
   
   /* Comment Input */

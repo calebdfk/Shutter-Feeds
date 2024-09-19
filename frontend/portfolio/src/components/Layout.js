@@ -1,11 +1,6 @@
-// src/components/Layout.js
 import React from 'react';
-// import Landingpage from '../Pages/Landingpage'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-
-// Extract the Footer component from Landingpage if exported correctly
-// const { Footer } = Landingpage;
 
 const Layout = ({ children }) => {
   return (
