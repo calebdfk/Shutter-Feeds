@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 // import Logo from '../Assets/Logo.jpg';
 
 const LandingPage = () => {
@@ -32,6 +34,16 @@ const LandingPage = () => {
         <p className="subtitle">Join our vibrant community today!</p>
         <Link to="/sign-up"><button className="get-started-btn">Get Started</button></Link>
       </main>
+
+      <section className="about">
+        <h2>About Shutter Feeds</h2>
+        <p>
+          Shutter Feeds is a community for photography enthusiasts, providing a platform to share, explore, and get feedback on your photographic work. Whether you are a professional or a hobbyist, Shutter Feeds offers a vibrant space to showcase your talent and connect with others who share your passion for photography.
+        </p>
+        <p>
+          Our mission is to inspire creativity and provide a supportive environment for photographers of all levels. Join us and be part of a growing community that celebrates the art of photography.
+        </p>
+      </section>
 
       <section className="call-to-action">
         <div className="cta-content">
@@ -95,13 +107,45 @@ const LandingPage = () => {
   </form>
 </section>
 
-  <footer className="footer">
+<section id="contact" className="contact-us-section">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need support, you can reach us via the following:</p>
+        <div className="contact-details">
+          <div className="contact-item">
+            <h3>Phone</h3>
+            <p>+254 234 567 8901</p>
+            <p>+265 234 567 8902</p>
+          </div>
+          <div className="contact-item">
+            <h3>Email</h3>
+            <p>support@shutterfeeds.com</p>
+            <p>info@shutterfeeds.com</p>
+          </div>
+        </div>
+      </section>
+
+<footer className="footer">
   <div className="footer-content">
     <p>&copy; 2024 Shutter Feeds. All rights reserved.</p>
     <div className="social-links">
-      <a href="#facebook">Facebook</a>
-      <a href="#instagram">Instagram</a>
-      <a href="#twitter">Twitter</a>
+      <a href="#facebook" className="social-icon">
+        <span className="icon-text">
+          <FontAwesomeIcon icon={faFacebook} size="2x" />
+          <span className="text">Facebook</span>
+        </span>
+      </a>
+      <a href="#instagram" className="social-icon">
+        <span className="icon-text">
+          <FontAwesomeIcon icon={faInstagram} size="2x" />
+          <span className="text">Instagram</span>
+        </span>
+      </a>
+      <a href="#twitter" className="social-icon">
+        <span className="icon-text">
+          <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <span className="text">Twitter</span>
+        </span>
+      </a>
     </div>
   </div>
 </footer>

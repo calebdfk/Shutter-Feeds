@@ -68,14 +68,18 @@
   
   .main-title {
     margin-top: 90px;
-    font-size: 48px;
+    font-size: 2rem;
     color: #1e3c72;
   }
   
   .subtitle {
-    font-size: 20px;
     color: #6c757d;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-size: 1rem;
   }
   
   .get-started-btn {
@@ -208,22 +212,49 @@
     font-weight: bold;
   }
   
-  .footer {
-    padding: 20px;
-    background-color: #ffffff;
-    color: #033852;
-    text-align: center;
-  }
+ .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding: 20px;
+  background-color: #3d8bb3; 
+  color: white; 
+}
+
+.footer-content {
+  text-align: center; 
+}
+
+.footer .social-links {
+  margin-top: 10px;
+  display: flex; 
+  gap: 20px; 
+  justify-content: center; 
+}
+
+.footer .social-icon {
+  display: flex;
+  align-items: center;
+  color: white; 
+  text-decoration: none; 
+  transition: color 0.3s ease;
+}
+
+.footer .social-icon:hover {
+  color: #ff6f61; 
+}
+
+.footer .icon-text {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.footer .icon-text .text {
+  margin-left: 8px; 
+  font-size: 18px; 
+}
   
-  .social-links a {
-    margin: 0 10px;
-    color: #033852;
-    text-decoration: none;
-  }
-  
-  .social-links a:hover {
-    text-decoration: underline;
-  }
   
   .newsletter {
     padding: 50px 20px;
@@ -283,5 +314,51 @@
     font-style: italic;
   }
   
-
+  .about {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+  }
   
+  .about h2 {
+    font-size: 2rem;
+    color: #1e3c72;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    color: #6c757d;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+ /* Contact Us Section */
+.contact-us-section {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  text-align: left;
+}
+
+.contact-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.contact-item p {
+  margin: 5px 0;
+}

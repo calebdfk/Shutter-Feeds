@@ -14,6 +14,7 @@ function Header() {
           <a href="/">Home</a>
           <a href="/posts">Posts</a>
           <a href="/notifications">Notifications</a>
+          <a href="#contact">Contact Us</a>
         </nav>
         <div className="auth-buttons">
         <Link to="/sign-up"><button className="signup-btn">Sign Up</button></Link>
